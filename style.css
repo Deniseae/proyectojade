@@ -39,6 +39,14 @@ h2{
     text-align: center;
     margin-top: 30px;
 }
+.bordeRedondeado{
+    border-radius: 25%;
+}
+.bordeRedondeado:hover{
+    transform: scale(1.5, 1.5);
+    transition: all 1s ease;
+    border: black 1px solid;
+}
 
 .listaIndex{
     font-size: medium;
