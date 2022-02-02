@@ -21,7 +21,8 @@
         <h1>
             <img src="imagenes/Jade (1).png" alt="logo" width="180px">
         </h1>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <!--Barra de navegación-->  
+        <nav class="navbar navbar-expand-lg navbar-light colorNav">
             <div class="container-fluid">
               <a class="navbar-brand" href="index.html">Home</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -53,34 +54,62 @@
     <main>
         <h2 class="animate__animated animate__bounce"><strong>Tratamientos</strong></h2>
     </main>
-
-    <!--tabla-->
-    <div class="tabla">   
-    <table Border= "4px" cellpadding="10px" cellspacing="10">
-        <tr>
-            <th><b>Tratamiento</b></th>
-            <th><b>Descripción</b></th>
-        </tr>
-        <tr>
-            <td>Pestañas</td>
-            <td>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus voluptatibus, iste eum expedita consequuntur provident possimus dolorum necessitatibus reprehenderit blanditiis unde quod incidunt impedit pariatur maiores quos molestiae vero quo.</td>
-        </tr>
-        <tr>
-            <td>Cosmetologia</td>
-            <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae sapiente, illo id consequuntur est odio voluptate deserunt, hic vero exercitationem rerum a nostrum omnis magni dolore, at adipisci temporibus! Sapiente!</td>
-        </tr>
-        <tr>
-            <td>peluquería</td>
-            <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus officiis sit ratione. Aut facilis eos quae beatae, molestias nihil! Aliquam mollitia fugiat rerum distinctio nulla temporibus inventore a officia quidem!</td>
-        </tr>
-        <tr>
-            <td>uñas</td>
-            <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium sint ad, dicta, porro eaque beatae tempora natus, eligendi dolores unde eveniet necessitatibus nam eum consequuntur delectus inventore. Voluptatibus, ducimus voluptates!</td>
-        </tr>
-    </table>
+    <!-- acordeon tratamientos-->
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingOne">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+            <img src="./imagenes/caramujer.png" alt="rostro" width="80px"> Rostro
+          </button>
+        </h2>
+        <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+            <h3>Permanente y liftin de pestañas</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, hic voluptatem labore pariatur illo est laboriosam iusto dicta eum, repellendus ad ducimus nihil ipsa dolorum recusandae aut eos omnis aliquid.</p>
+            <h3>Limpieza de cutis</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, hic voluptatem labore pariatur illo est laboriosam iusto dicta eum, repellendus ad ducimus nihil ipsa dolorum recusandae aut eos omnis aliquid.</p>
+            <h3>Extención de pestañas</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, hic voluptatem labore pariatur illo est laboriosam iusto dicta eum, repellendus ad ducimus nihil ipsa dolorum recusandae aut eos omnis aliquid.</p>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+            <img src="./imagenes/logouñas.jpg" alt="uñas" width="80px">Uñas
+          </button>
+        </h2>
+        <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+            <h3>En gel</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, hic voluptatem labore pariatur illo est laboriosam iusto dicta eum, repellendus ad ducimus nihil ipsa dolorum recusandae aut eos omnis aliquid.</p>
+            <h3>Esculpidas</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, hic voluptatem labore pariatur illo est laboriosam iusto dicta eum, repellendus ad ducimus nihil ipsa dolorum recusandae aut eos omnis aliquid.</p>
+            <h3>Acrilicas</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, hic voluptatem labore pariatur illo est laboriosam iusto dicta eum, repellendus ad ducimus nihil ipsa dolorum recusandae aut eos omnis aliquid.</p>
+            <h3>Esmaltado semipermanente</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, hic voluptatem labore pariatur illo est laboriosam iusto dicta eum, repellendus ad ducimus nihil ipsa dolorum recusandae aut eos omnis aliquid.</p>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+            <img src="./imagenes/cuerpomujer.png" alt="cuerpo" width="80px">Cuerpo
+          </button>
+        </h2>
+        <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+            <h3>Depilación laser</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, hic voluptatem labore pariatur illo est laboriosam iusto dicta eum, repellendus ad ducimus nihil ipsa dolorum recusandae aut eos omnis aliquid.</p>
+            <h3>Masajes</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, hic voluptatem labore pariatur illo est laboriosam iusto dicta eum, repellendus ad ducimus nihil ipsa dolorum recusandae aut eos omnis aliquid.</p>
+         </div>
+        </div>
+      </div>
     </div>
     
-    <!--footer-->
+    <!--Empieza el footer-->  
     <footer><hr>  
         <h2 class="jadeLeft">Jade</h2>
           <div class="flexFooter">
